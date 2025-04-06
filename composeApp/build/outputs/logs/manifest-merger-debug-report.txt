@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\projects\shroom_oracle_kmp\composeApp\src\androidMain\AndroidManifest.xml:2:1-28:12
-INJECTED from C:\projects\shroom_oracle_kmp\composeApp\src\androidMain\AndroidManifest.xml:2:1-28:12
-INJECTED from C:\projects\shroom_oracle_kmp\composeApp\src\androidMain\AndroidManifest.xml:2:1-28:12
-INJECTED from C:\projects\shroom_oracle_kmp\composeApp\src\androidMain\AndroidManifest.xml:2:1-28:12
+ADDED from C:\projects\shroom_oracle_kmp\composeApp\src\androidMain\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\projects\shroom_oracle_kmp\composeApp\src\androidMain\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\projects\shroom_oracle_kmp\composeApp\src\androidMain\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\projects\shroom_oracle_kmp\composeApp\src\androidMain\AndroidManifest.xml:2:1-27:12
 MERGED from [androidx.activity:activity:1.10.1] C:\Users\deong\.gradle\caches\8.11.1\transforms\ded6780b96cc1459b9a424972300163c\transformed\activity-1.10.1\AndroidManifest.xml:17:1-22:12
 MERGED from [org.jetbrains.compose.components:components-resources-android:1.7.3] C:\Users\deong\.gradle\caches\8.11.1\transforms\e0fcd61fd58b7a1c2e49f4b84e95ee9d\transformed\library-release\AndroidManifest.xml:2:1-16:12
 MERGED from [androidx.compose.material:material-android:1.7.6] C:\Users\deong\.gradle\caches\8.11.1\transforms\b237f995916201b2ffb9b03dee7826df\transformed\material-release\AndroidManifest.xml:2:1-7:12
@@ -78,8 +78,8 @@ ADDED from C:\projects\shroom_oracle_kmp\composeApp\src\androidMain\AndroidManif
 	android:name
 		ADDED from C:\projects\shroom_oracle_kmp\composeApp\src\androidMain\AndroidManifest.xml:6:22-64
 application
-ADDED from C:\projects\shroom_oracle_kmp\composeApp\src\androidMain\AndroidManifest.xml:8:5-26:19
-INJECTED from C:\projects\shroom_oracle_kmp\composeApp\src\androidMain\AndroidManifest.xml:8:5-26:19
+ADDED from C:\projects\shroom_oracle_kmp\composeApp\src\androidMain\AndroidManifest.xml:8:5-25:19
+INJECTED from C:\projects\shroom_oracle_kmp\composeApp\src\androidMain\AndroidManifest.xml:8:5-25:19
 MERGED from [org.jetbrains.compose.components:components-resources-android:1.7.3] C:\Users\deong\.gradle\caches\8.11.1\transforms\e0fcd61fd58b7a1c2e49f4b84e95ee9d\transformed\library-release\AndroidManifest.xml:7:5-14:19
 MERGED from [org.jetbrains.compose.components:components-resources-android:1.7.3] C:\Users\deong\.gradle\caches\8.11.1\transforms\e0fcd61fd58b7a1c2e49f4b84e95ee9d\transformed\library-release\AndroidManifest.xml:7:5-14:19
 MERGED from [androidx.compose.ui:ui-tooling-android:1.7.6] C:\Users\deong\.gradle\caches\8.11.1\transforms\a65bc37e25625c3178ce4eaf5d63dc39\transformed\ui-tooling-release\AndroidManifest.xml:22:5-26:19
@@ -101,37 +101,35 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\de
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.13.1] C:\Users\deong\.gradle\caches\8.11.1\transforms\4c26604fcea9fe224ea2b34dc0e8d88d\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from C:\projects\shroom_oracle_kmp\composeApp\src\androidMain\AndroidManifest.xml:14:9-35
+		ADDED from C:\projects\shroom_oracle_kmp\composeApp\src\androidMain\AndroidManifest.xml:13:9-35
 	android:label
-		ADDED from C:\projects\shroom_oracle_kmp\composeApp\src\androidMain\AndroidManifest.xml:12:9-41
+		ADDED from C:\projects\shroom_oracle_kmp\composeApp\src\androidMain\AndroidManifest.xml:11:9-41
 	android:roundIcon
-		ADDED from C:\projects\shroom_oracle_kmp\composeApp\src\androidMain\AndroidManifest.xml:13:9-54
+		ADDED from C:\projects\shroom_oracle_kmp\composeApp\src\androidMain\AndroidManifest.xml:12:9-54
 	android:icon
-		ADDED from C:\projects\shroom_oracle_kmp\composeApp\src\androidMain\AndroidManifest.xml:11:9-43
+		ADDED from C:\projects\shroom_oracle_kmp\composeApp\src\androidMain\AndroidManifest.xml:10:9-43
 	android:allowBackup
-		ADDED from C:\projects\shroom_oracle_kmp\composeApp\src\androidMain\AndroidManifest.xml:10:9-35
+		ADDED from C:\projects\shroom_oracle_kmp\composeApp\src\androidMain\AndroidManifest.xml:9:9-35
 	android:theme
-		ADDED from C:\projects\shroom_oracle_kmp\composeApp\src\androidMain\AndroidManifest.xml:15:9-72
-	android:networkSecurityConfig
-		ADDED from C:\projects\shroom_oracle_kmp\composeApp\src\androidMain\AndroidManifest.xml:9:9-69
+		ADDED from C:\projects\shroom_oracle_kmp\composeApp\src\androidMain\AndroidManifest.xml:14:9-72
 activity#com.deon.shroom_oracle_kmp.MainActivity
-ADDED from C:\projects\shroom_oracle_kmp\composeApp\src\androidMain\AndroidManifest.xml:16:9-25:20
+ADDED from C:\projects\shroom_oracle_kmp\composeApp\src\androidMain\AndroidManifest.xml:15:9-24:20
 	android:exported
-		ADDED from C:\projects\shroom_oracle_kmp\composeApp\src\androidMain\AndroidManifest.xml:17:13-36
+		ADDED from C:\projects\shroom_oracle_kmp\composeApp\src\androidMain\AndroidManifest.xml:16:13-36
 	android:configChanges
-		ADDED from C:\projects\shroom_oracle_kmp\composeApp\src\androidMain\AndroidManifest.xml:18:13-225
+		ADDED from C:\projects\shroom_oracle_kmp\composeApp\src\androidMain\AndroidManifest.xml:17:13-225
 	android:name
-		ADDED from C:\projects\shroom_oracle_kmp\composeApp\src\androidMain\AndroidManifest.xml:19:13-41
+		ADDED from C:\projects\shroom_oracle_kmp\composeApp\src\androidMain\AndroidManifest.xml:18:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\projects\shroom_oracle_kmp\composeApp\src\androidMain\AndroidManifest.xml:20:13-24:29
+ADDED from C:\projects\shroom_oracle_kmp\composeApp\src\androidMain\AndroidManifest.xml:19:13-23:29
 action#android.intent.action.MAIN
-ADDED from C:\projects\shroom_oracle_kmp\composeApp\src\androidMain\AndroidManifest.xml:21:17-69
+ADDED from C:\projects\shroom_oracle_kmp\composeApp\src\androidMain\AndroidManifest.xml:20:17-69
 	android:name
-		ADDED from C:\projects\shroom_oracle_kmp\composeApp\src\androidMain\AndroidManifest.xml:21:25-66
+		ADDED from C:\projects\shroom_oracle_kmp\composeApp\src\androidMain\AndroidManifest.xml:20:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\projects\shroom_oracle_kmp\composeApp\src\androidMain\AndroidManifest.xml:23:17-77
+ADDED from C:\projects\shroom_oracle_kmp\composeApp\src\androidMain\AndroidManifest.xml:22:17-77
 	android:name
-		ADDED from C:\projects\shroom_oracle_kmp\composeApp\src\androidMain\AndroidManifest.xml:23:27-74
+		ADDED from C:\projects\shroom_oracle_kmp\composeApp\src\androidMain\AndroidManifest.xml:22:27-74
 uses-sdk
 INJECTED from C:\projects\shroom_oracle_kmp\composeApp\src\androidMain\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\projects\shroom_oracle_kmp\composeApp\src\androidMain\AndroidManifest.xml

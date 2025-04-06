@@ -24,7 +24,7 @@ object OracleApi {
 
     suspend fun sendImageToOracle(imageBytes: ByteArray): OracleResult {
         val response: HttpResponse = client.submitFormWithBinaryData(
-            url = "http://192.168.1.22:8000/oracle", // 👈 change to your backend URL
+            url = "https://shroom-oracle-backend.onrender.com", // 👈 change to your backend URL
             formData = formData {
                 append("file", imageBytes, Headers.build {
                     append(HttpHeaders.ContentType, "image/jpeg")
@@ -32,6 +32,10 @@ object OracleApi {
                 })
             }
         )
+        if (!response.status.isSuccess()) {
+            val errorBody = response.bodyAsText()
+            throw Exception("Oracle error: $errorBody")
+        }
         return response.body()
     }
 }
