@@ -20,6 +20,11 @@ import kotlinx.coroutines.launch
 import java.io.ByteArrayInputStream
 import java.io.File
 import java.io.InputStream
+import kotlinx.coroutines.withContext
+import android.graphics.Bitmap
+import java.io.ByteArrayOutputStream
+import kotlinx.coroutines.Dispatchers
+
 
 @Composable
 fun ImagePickerScreen() {
@@ -46,7 +51,8 @@ fun ImagePickerScreen() {
             scope.launch {
                 isLoading = true
                 try {
-                    val result = OracleApi.sendImageToOracle(bytes)
+                    val compressedBytes = compressImageBytes(context, bytes)
+                    val result = OracleApi.sendImageToOracle(compressedBytes)
                     oracleResult = result
                 } catch (e: Exception) {
                     errorMessage = "Failed to contact oracle: ${e.message}"
@@ -97,6 +103,21 @@ fun ImagePickerScreen() {
     }
 }
 
+suspend fun compressImageBytes(context: Context, originalBytes: ByteArray): ByteArray {
+    return withContext(Dispatchers.IO) {
+        try {
+            val inputStream = ByteArrayInputStream(originalBytes)
+            val bitmap = BitmapFactory.decodeStream(inputStream)
+
+            val outputStream = ByteArrayOutputStream()
+            bitmap.compress(Bitmap.CompressFormat.JPEG, 80, outputStream)
+            outputStream.toByteArray()
+        } catch (e: Exception) {
+            e.printStackTrace()
+            originalBytes // fallback: return original if compression fails
+        }
+    }
+}
 
 fun decodeImage(context: Context, uri: Uri): ImageBitmap? {
     return try {

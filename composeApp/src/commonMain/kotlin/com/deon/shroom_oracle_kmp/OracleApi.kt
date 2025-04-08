@@ -9,6 +9,7 @@ import io.ktor.http.*
 import io.ktor.client.plugins.*
 import io.ktor.client.request.forms.*
 import io.ktor.serialization.kotlinx.json.*
+import kotlinx.coroutines.delay
 import kotlinx.serialization.json.Json
 
 object OracleApi {
@@ -23,8 +24,24 @@ object OracleApi {
     }
 
     suspend fun sendImageToOracle(imageBytes: ByteArray): OracleResult {
+        val maxRetries = 3
+        var attempt = 0
+        var lastError: Exception? = null
+
+        while(attempt < maxRetries) {
+            try {
+                return attemptSend(imageBytes)
+            } catch (e: Exception) {
+                delay(1000) // wait 2s and retry once
+                return attemptSend(imageBytes)
+            }
+        }
+        throw Exception("Oracle unreachable after $maxRetries attempts: ${lastError?.message}")
+    }
+
+    suspend fun attemptSend(imageBytes: ByteArray): OracleResult {
         val response: HttpResponse = client.submitFormWithBinaryData(
-            url = "https://shroom-oracle-backend.onrender.com", // 👈 change to your backend URL
+            url = "http://192.168.1.22:8000/oracle", // 👈 change to your backend URL
             formData = formData {
                 append("file", imageBytes, Headers.build {
                     append(HttpHeaders.ContentType, "image/jpeg")
